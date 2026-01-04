@@ -24,11 +24,7 @@
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
-    --radius-2xl: 1rem;
     --radius-4xl: 2rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -191,8 +187,14 @@
   .relative {
     position: relative;
   }
+  .sticky {
+    position: sticky;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .top-0\.5 {
+    top: calc(var(--spacing) * 0.5);
   }
   .top-3 {
     top: calc(var(--spacing) * 3);
@@ -202,12 +204,6 @@
   }
   .z-50 {
     z-index: 50;
-  }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
   }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
@@ -242,11 +238,8 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
-  .mt-28 {
-    margin-top: calc(var(--spacing) * 28);
-  }
-  .mt-32 {
-    margin-top: calc(var(--spacing) * 32);
+  .mt-96 {
+    margin-top: calc(var(--spacing) * 96);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -311,9 +304,6 @@
   .flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
   .items-center {
     align-items: center;
   }
@@ -328,9 +318,6 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -371,44 +358,17 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\.\.\/assets\/i\.jpg\)\] {
-    background-image: url(../assets/i.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/\.jpg\)\] {
-    background-image: url(../assets/images/.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/Mongram_\.jpg\)\] {
-    background-image: url(../assets/images/Mongram_.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/Mongram_Midnight\.jpg\)\] {
-    background-image: url(../assets/images/Mongram_Midnight.jpg);
-  }
   .bg-\[url\(\.\.\/assets\/images\/Monogram130\.jpg\)\] {
     background-image: url(../assets/images/Monogram130.jpg);
   }
   .bg-\[url\(\.\.\/assets\/images\/Monogram_Midnight\.jpg\)\] {
     background-image: url(../assets/images/Monogram_Midnight.jpg);
   }
-  .bg-\[url\(\.\.\/assets\/images\/Women-banner\.jpg\)\] {
-    background-image: url(../assets/images/Women-banner.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/Women_\.jpg\)\] {
-    background-image: url(../assets/images/Women_.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/Women_The\.jpg\)\] {
-    background-image: url(../assets/images/Women_The.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/Women_The_\.jpg\)\] {
-    background-image: url(../assets/images/Women_The_.jpg);
-  }
   .bg-\[url\(\.\.\/assets\/images\/Women_The_Latest\.jpg\)\] {
     background-image: url(../assets/images/Women_The_Latest.jpg);
   }
   .bg-\[url\(\.\.\/assets\/images\/men-banner\.jpg\)\] {
     background-image: url(../assets/images/men-banner.jpg);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/women-banner\.jpg\)\] {
-    background-image: url(../assets/images/women-banner.jpg);
   }
   .from-\[\#D3D1D0\] {
     --tw-gradient-from: #D3D1D0;
